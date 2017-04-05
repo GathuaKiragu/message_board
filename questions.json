@@ -1,14 +1,14 @@
 { "questions": [{
     "question": "What development tools have you used??",
     "author": "Kiragu Gathua",
-    "additional_notes": "-",
+    "additional_notes": "-"
   }, {
     "question": "What languages have you programmed in?",
     "author": "Ephie Cloner",
-    "additional_notes": "-",
+    "additional_notes": "-"
   }, {
     "question": "What source control tools have you used?",
     "author": "Cliff Gor",
-    "additional_notes": "-",
+    "additional_notes": "-"
   }]
 }
