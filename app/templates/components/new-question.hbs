@@ -4,20 +4,22 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="question">Ask Question</label> {{input value=question_area id="question"}}
+        <label for="question">Ask Question</label> {{input class="form-control" value=question_area id="question"}}
       </div>
 
       <div class="form-group">
-        <label for="author">Author</label> {{input value=author id="author"}}
+        <label for="author">Author</label>
+        {{input class="form-control" value=author id="author"}}
       </div>
 
       <div class="form-group">
-        <label for="additional_notes">Additional Notes</label> {{input value=additional_notes id="additional_notes"}}
+        <label for="additional_notes">Additional Notes</label>
+        {{input class="form-control" value=additional_notes id="additional_notes"}}
       </div>
 
-      <button {{action 'saveQuestion1'}}>Save</button>
+      <button class="btn btn-success"{{action 'saveQuestion1'}}>Save</button>
     </form>
-  </div>
+  </div><br>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+  <button class="btn btn-info"{{action 'questionFormShow'}}>New Question</button>
 {{/if}}

@@ -1,8 +1,9 @@
 <h1> Welcome to Gathua Messaging Board </h1>
-
+<div class="well">
 <ul>
   {{#each model as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}
+  {{/each}}<br>
   {{new-question saveQuestion2="saveQuestion3"}}
 </ul>
+</div>
