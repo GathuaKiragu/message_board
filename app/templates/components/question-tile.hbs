@@ -1,4 +1,5 @@
 <li>
-  {{question.question}}<br> ~{{question.author}}~ <br>
+  {{question.question_area}}<br> ~{{question.author}}~ <br>
   <button {{action 'delete' question}}>Delete Question</button>
+  {{update-question question=question update="update"}}
 </li>
