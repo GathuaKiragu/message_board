@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  answer: DS.attr(),
+  answer_area: DS.attr(),
   author: DS.attr()
 
 });

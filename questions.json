@@ -1,4 +1,5 @@
-{ "questions": [{
+{
+  "questions": [{
     "question_area": "What development tools have you used??",
     "author": "Kiragu Gathua",
     "additional_notes": "Do Do Do Do Do"
@@ -10,5 +11,18 @@
     "question_area": "What source control tools have you used?",
     "author": "Cliff Gor",
     "additional_notes": "bla bla bla"
-  }]
+  }],
+  "answers": [{
+      "answer_area": "Extensions, Frameworks, Photoshop",
+      "author": "Ephie Programmer"
+    },
+    {
+      "answer_area": "Javascript, ReactJs, Ruby & Rails and Python!",
+      "author": "Alex"
+    },
+    {
+      "answer_area": "SVN, GIT, Mercurial, Bazaar",
+      "author": "Cliff Gor"
+    }
+  ]
 }

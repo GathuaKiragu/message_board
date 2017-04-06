@@ -6,4 +6,11 @@
   {{/each}}<br>
   {{new-question saveQuestion2="saveQuestion3"}}
 </ul>
+
+<h2>Answers</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.answer_area}} - by ~{{answer.author}}~</li>
+  {{/each}}
+</ul>
 </div>
