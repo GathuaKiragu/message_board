@@ -15,11 +15,19 @@
       <div class="form-group">
         <label for="additional_notes">Additional Notes</label>
         {{input class="form-control" value=additional_notes id="additional_notes"}}
+
+        <label for="author">Author</label> {{input class="form-control" value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="additional_notes">Additional Notes</label> {{input class="form-control" value=additional_notes id="additional_notes"}}
+
       </div>
 
       <button class="btn btn-success"{{action 'saveQuestion1'}}>Save</button>
     </form>
   </div><br>
 {{else}}
-  <button class="btn btn-info"{{action 'questionFormShow'}}>New Question</button>
+<button class="btn btn-primary" {{action 'questionFormShow'}}>New Question</button>
+
 {{/if}}

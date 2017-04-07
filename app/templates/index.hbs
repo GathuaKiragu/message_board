@@ -1,17 +1,24 @@
+{{outlet}}
 <h1> Welcome to Gathua Messaging Board </h1>
-<div class="well">
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}}<br>
-  {{new-question saveQuestion2="saveQuestion3"}}
-</ul>
 
-<h2>Answers</h2>
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.answer_area}} - by ~{{answer.author}}~</li>
-  {{/each}}
-</ul>
-{{new-answer saveAnswer="saveAnswer"}}
+<!-- Question Display section -->
+<div class="well">
+  <ol>
+    {{#each model.questions as |question|}}
+      <li>{{question-tile question=question}}</li>
+    {{/each}}
+  </ol>
+    {{new-question saveQuestion2="saveQuestion3"}}
+</div>
+
+<!-- Answer Display section -->
+<div class="well">
+  <h2>Answers</h2>
+  <ol>
+    {{#each model.answers as |answer|}}
+        {{answer-tile answer=answer destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+    {{/each}}
+  </ol>
+
+  {{new-answer saveAnswer="saveAnswer"}}
 </div>

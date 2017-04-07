@@ -1,5 +1,5 @@
-<li>
-  {{question.question_area}}<br> ~{{question.author}}~ <br>
-  <button class="btn btn-danger"{{action 'delete' question}}>Delete Question</button> <br>
-  {{update-question question=question update="update"}}
-</li>
+<ul>
+  <li>
+    {{#link-to 'question' question.id}} {{question.question_area}} {{question.author}} {{/link-to}} <br>
+  </li>
+</ul>
