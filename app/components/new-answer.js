@@ -12,6 +12,7 @@ export default Ember.Component.extend({
     saveAnswer() {
      var params = {
        answer_area: this.get('answer_area'),
+       rating: parseInt(this.get('rating')),
        author: this.get('author'),
        question: this.get('question')
      };

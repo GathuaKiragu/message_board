@@ -1,4 +1,5 @@
-<li>
-  {{answer.answer_area}} - by - <b>{{answer.author}}</b> <br>
+<ul>
+  <h3>{{title}}</h3>
+  {{answer.answer_area}}<br> 
   <button class="btn btn-danger" {{action 'delete' answer}}>Delete Answer</button>
-</li>
+</ul>
