@@ -17,6 +17,7 @@
   <ol>
     {{#each model.answers as |answer|}}
         {{answer-tile answer=answer destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+        {{reviews answer}}
     {{/each}}
   </ol>
 

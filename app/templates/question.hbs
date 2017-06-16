@@ -1,9 +1,6 @@
 {{outlet}}
 
+<!-- passes the destroy question and answer to the route handler -->
 {{update-question question=model update="update"}}
-
-//passes the destroy question and answer to the route handler
-
 {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-
 {{new-answer saveAnswer="saveAnswer" question=model}}
